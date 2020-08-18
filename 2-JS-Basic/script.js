@@ -58,6 +58,8 @@ console.log(typeof result);
 ====== BASIC OPERATOR ========== 
 */
 
+/*
+========== TERNARY OPERATOR AND SWITCH STATEMENT ============
 
 var firstName = "Ian Lombu";
 var age = 25;
@@ -75,3 +77,28 @@ switch (role) {
         console.log(`Are you Alien ?`);
         break;
 }
+
+========== TERNARY OPERATOR AND SWITCH STATEMENT ============
+*/
+
+// ======== FUNCTION EXPRESSION =============
+var perkalian = function(angka1, angka2) {
+    return angka1 * angka2
+}
+
+console.log(perkalian(3, 4));
+
+var profil = function(pekerjaan, namaLengkap) {
+    switch (pekerjaan) {
+        case 'Web Developer':
+            return namaLengkap + ' berprofesi sebagai ' + pekerjaan;
+        case 'Programmer' :
+            return namaLengkap + ' berprofesi sebagai ' + pekerjaan;
+        default:
+            return namaLengkap + ' seorang pemalas ';
+    }
+}
+
+console.log(profil('Programmer', 'saduk'));
+
+// ======== FUNCTION EXPRESSION =============
