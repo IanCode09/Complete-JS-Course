@@ -36,3 +36,21 @@ console.log('His name is ' + firstName + ' ' + lastName);
 ======== VARIABLE MUTATION AND COERCION ========
 */
 
+
+// BASIC OPERATOR
+var year, yearIan, yearSaduk;
+now = 2020;
+ageIan = 25;
+ageSaduk = 23;
+
+yearIan = now - ageIan;
+yearSaduk = now - ageSaduk
+
+console.log(yearIan);
+console.log(yearSaduk);
+
+// Logical Operator
+var result = ageIan > ageSaduk
+console.log(result);
+console.log(typeof result);
+
