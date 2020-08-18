@@ -36,8 +36,9 @@ console.log('His name is ' + firstName + ' ' + lastName);
 ======== VARIABLE MUTATION AND COERCION ========
 */
 
+/*
+====== BASIC OPERATOR ==========
 
-// BASIC OPERATOR
 var year, yearIan, yearSaduk;
 now = 2020;
 ageIan = 25;
@@ -54,3 +55,23 @@ var result = ageIan > ageSaduk
 console.log(result);
 console.log(typeof result);
 
+====== BASIC OPERATOR ========== 
+*/
+
+
+var firstName = "Ian Lombu";
+var age = 25;
+age >= 18 ? console.log(firstName + ' Should be Police') : console.log(firstName + 'is a Student');
+
+var role = 'use';
+switch (role) {
+    case 'admin':
+        console.log('Welcome Admin');
+        break;
+    case 'users':
+        console.log('Welcome User');
+        break;
+    default:
+        console.log(`Are you Alien ?`);
+        break;
+}
