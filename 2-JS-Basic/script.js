@@ -82,6 +82,7 @@ switch (role) {
 */
 
 // ======== FUNCTION EXPRESSION =============
+/*
 var perkalian = function(angka1, angka2) {
     return angka1 * angka2
 }
@@ -100,5 +101,27 @@ var profil = function(pekerjaan, namaLengkap) {
 }
 
 console.log(profil('Programmer', 'saduk'));
-
+*/
 // ======== FUNCTION EXPRESSION =============
+
+// ======== OBJECT AND METHOD ===============
+var profil = {
+    nama: 'Ian Lombu',
+    umur: 25,
+    jurusan: 'Ilmu Komputer',
+    skil: ['PHP, JS, Laravel'],
+    nilai1: 70,
+    nilai2: 90,
+    hitungNilai: function() {
+        return this.nilai1 + this.nilai2
+    }   
+}
+console.log(profil.hitungNilai());
+
+
+var mahasiswa = new Object()
+mahasiswa.firstName = 'Saduk'
+mahasiswa.lastName = 'Fritz'
+var panggil = mahasiswa['firstName'];
+console.log(panggil);
+// ======== OBJECT AND METHOD ===============
