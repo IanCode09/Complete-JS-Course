@@ -127,6 +127,7 @@ console.log(panggil);
 // ======== OBJECT AND METHOD ===============
 */
 
+/*
 //====== CONTINUE AND BREAK STATEMENTS =======
 var guitar = ['Yamaha', 'string', 1500, 'Ian']
 for(i = 0 ; i < guitar.length ; i++) {
@@ -139,3 +140,41 @@ for(i = 0 ; i < guitar.length ; i++) {
     console.log(guitar[i]);
 }
 //====== CONTINUE AND BREAK STATEMENTS =======
+*/
+
+/*
+// ==== SCOPING AND SCOPE CHAIN ====
+var a = 'Hello'
+first()
+
+function first() {
+    var b = 'Hi'
+    second()
+    function second() {
+        var c = 'Hey'
+        console.log(a + b + c);
+    }
+}
+// ==== SCOPING AND SCOPE CHAIN ====
+*/
+
+//========== THIS VARIABLE =============
+var ian = {
+    name: 'Ian Lombu',
+    yearOfBirth: 1995,
+    calculateAge: function() {
+        console.log(this);
+        console.log(2020 - this.yearOfBirth);
+    }
+}
+
+ian.calculateAge();
+
+var saduk = {
+    name: 'Saduk Prince',
+    yearOfBirth: 1997,
+}
+
+saduk.calculateAge = ian.calculateAge
+saduk.calculateAge()
+//========== THIS VARIABLE =============
