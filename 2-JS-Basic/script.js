@@ -104,6 +104,7 @@ console.log(profil('Programmer', 'saduk'));
 */
 // ======== FUNCTION EXPRESSION =============
 
+/*
 // ======== OBJECT AND METHOD ===============
 var profil = {
     nama: 'Ian Lombu',
@@ -118,10 +119,23 @@ var profil = {
 }
 console.log(profil.hitungNilai());
 
-
 var mahasiswa = new Object()
 mahasiswa.firstName = 'Saduk'
 mahasiswa.lastName = 'Fritz'
 var panggil = mahasiswa['firstName'];
 console.log(panggil);
 // ======== OBJECT AND METHOD ===============
+*/
+
+//====== CONTINUE AND BREAK STATEMENTS =======
+var guitar = ['Yamaha', 'string', 1500, 'Ian']
+for(i = 0 ; i < guitar.length ; i++) {
+    if(typeof guitar[i] !== 'number') continue;
+    console.log(guitar[i]);
+}
+
+for(i = 0 ; i < guitar.length ; i++) {
+    if(typeof guitar[i] !== 'string') break;
+    console.log(guitar[i]);
+}
+//====== CONTINUE AND BREAK STATEMENTS =======
